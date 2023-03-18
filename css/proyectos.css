@@ -1,0 +1,42 @@
+.proyects {
+  max-width: 950px;
+  margin: 0 auto;
+}
+.proyect-title {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+.item-proyecto {
+  font-size: 20px;
+  font-weight: 500;
+  box-shadow: 0 4px 10px var(--navbar-shallow-color);
+  border-radius: 42px;
+  padding: 0.5em 0.7em;
+  margin: 10px;
+  text-align: center;
+  list-style: none;
+}
+
+.item-proyecto:hover {
+  background-color: var(--navbar-shallow-color);
+  color: var(--navbar-color);
+}
+.proyect-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (min-width: 950px) {
+  .proyect-title {
+    font-size: 50px;
+  }
+  .item-proyecto {
+    font-size: 30px;
+    margin: 10px;
+  }
+}

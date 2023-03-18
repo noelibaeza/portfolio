@@ -1,0 +1,105 @@
+.educations {
+  display: flex;
+  flex-direction: column;
+}
+.education-body {
+  background-color: var(--primary-color);
+}
+.wave {
+  width: 100%;
+  position: relative;
+  top: 2px;
+}
+.wave_bootom {
+  transform: scaleY(-1);
+  top: -2px;
+}
+.education-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 25px;
+}
+.education-date {
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--navbar-shallow-color);
+}
+.education-company {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+.education-company a {
+  color: var(--secondary-color);
+  font-weight: bold;
+  cursor: pointer;
+}
+.education-company a:hover {
+  filter: drop-shadow(0 0 14px var(--text-color));
+}
+.name-curso {
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.experience {
+  padding: 25px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+@media (min-width: 950px) {
+  .education-title {
+    font-size: 50px;
+    margin: 35px 0;
+  }
+  .education-date {
+    font-size: 40px;
+  }
+  .education-company {
+    font-size: 25px;
+  }
+  .name-curso {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .experience {
+    padding: 0;
+  }
+  .experience_left {
+    text-align: right;
+  }
+  .experiences-grid {
+    display: grid;
+    grid-template-columns: auto 2px auto;
+    gap: 20px 70px;
+    padding: 70px;
+    justify-content: center;
+    max-width: 980px;
+    margin: 0 auto;
+  }
+  .line {
+    background-color: var(--navbar-shallow-color);
+    position: relative;
+  }
+  .line::before,
+  .line::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--navbar-shallow-color);
+    position: absolute;
+    top: -20px;
+    left: -9px;
+  }
+  .line::after {
+    top: 100%;
+    z-index: 1;
+  }
+}
