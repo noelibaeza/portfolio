@@ -1,4 +1,4 @@
 # Portfolio
 
-(Porfolio)[https://noelibaeza.github.io/portfolio/]
+[Porfolio](https://noelibaeza.github.io/portfolio/)
 
